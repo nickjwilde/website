@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
-import .secrets
+from . import secrets
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': secrets.DB_NAME,
         'HOST': secrets.DB_HOST,
-        'USER': secrets.DB_USER,
+        'USER': secrets.DB_USERNAME,
         'PASSWORD': secrets.DB_PASSWORD,
         'PORT': secrets.DB_PORT,
     }
