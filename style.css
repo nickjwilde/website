@@ -1,8 +1,17 @@
 body{
 	margin: 0;
 	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2, 
+h3, h4, 
+h5, h6
+{
+	color: #d84c00;
+	min-width:150px;
+	font-family: Consolas, Lucida Console;
+}
 .nav {
 	list-style-type: none;
 	margin: 0 auto;
@@ -26,7 +35,7 @@ body{
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
-
+	color: #222222;
 }
 
 .nav-item a:hover {
@@ -35,4 +44,19 @@ body{
 
 .nav-item.active a{
 	border-bottom: solid #0088d8 2px;
+}
+
+.side-nav {
+	list-style-type: none;
+	float: left;
+}
+
+.main-body {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.uline-h {
+	border-bottom: solid 2px #d84c00;
+	padding-bottom: 5px;
 }
