@@ -26,10 +26,13 @@ body{
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
-	transition: all 0.25s ease-in-out;
+
 }
 
 .nav-item a:hover {
-	background-color: #0088d8;
-	color: white;
+	border-bottom: solid #0088d8 2px;
+}
+
+.nav-item.active a{
+	border-bottom: solid #0088d8 2px;
 }
