@@ -18,22 +18,16 @@
 		</ul>
     {% endblock %}
 
-    {% block body %}
-		<div class="main-body">
-			<h1><span class="uline-h">Heading 1</span></h1>
-			<p>This is a paragraph</p>
-			<h2>Heading 2</h2>
-			<p>This is a paragraph</p>
-			<h3>Heading 3</h3>
-			<p>This is a paragraph</p>
-			<h4>Heading 4</h4>
-			<p>This is a paragraph</p>
-			<h5>Heading 5</h5>
-			<p>This is a paragraph</p>
-			<h6>Heading 6</h6>
-			<p>This is a paragraph</p>
-		</div>
-    {% endblock %}
+    <div id="main-body">
+        {% block body %}
+        {% endblock %}
+    </div>
+    
+    <div id="footer">
+        {% block footer %}
+        {% endblock %}
+        <p>&copy; 2017 Nick Wilde</p>
+    </div>
 
 </body>
 </html>
