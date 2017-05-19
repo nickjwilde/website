@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': secrets.engines['sqlite'],
         'NAME': secrets.DB_NAME,
         'HOST': secrets.DB_HOST,
         'USER': secrets.DB_USERNAME,

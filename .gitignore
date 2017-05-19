@@ -90,3 +90,4 @@ ENV/
 
 #django secrets file
 website/secrets.py
+nw_site.db
