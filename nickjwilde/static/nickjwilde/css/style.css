@@ -64,7 +64,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-item a:hover {
-	border-bottom: solid #0088d8 2px;
+    background-color: #0088d8;
+    color: white;
+    box-shadow: 0 4px 6px 0 grey,
+        0 4px 20px 0 grey
 }
 
 .nav-item.active a{
@@ -91,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
     color: white;
-    background-color: #222222;
+    background-color: #2687bf;
 
     padding: 1em;
 
@@ -101,4 +104,49 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
 
     text-align: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 570px){
+    .nav {
+        width: 100%;
+        background-color: #0088d8;
+    }
+
+    .nav-item {
+        display: none;
+        float: none;
+        max-width: none;
+        width: 100%;
+    }
+    
+    .nav-item a {
+        color: white;
+    }
+
+    .nav-item a:hover {
+        box-shadow: none;
+    }
+    
+    .stacked-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .stacked-bar {
+        background-color: white;
+        height: 3px;
+        width: 32px;
+        margin: 6px auto;
+    }
+
+    .visible {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 571px){
+    .stacked-menu {
+        display: none;
+    }
 }

@@ -4,14 +4,19 @@
     {% load static %}
 
 	<link href={% static "nickjwilde/css/style.css" %} type="text/css" rel="stylesheet" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     {% block head %}
     {% endblock %}
 </head>
 <body>
     {% block nav %}
 		<ul class="nav">
-			<li class="nav-item active"><a href="{% url 'nickjwilde:home' %}">Home</a></li>
+            <div class="stacked-menu">
+                <div class="stacked-bar" alt="menu-icon"></div>
+                <div class="stacked-bar" alt="menu-icon"></div>
+                <div class="stacked-bar" alt="menu-icon"></div>
+            </div>
+			<li class="nav-item"><a href="{% url 'nickjwilde:home' %}">Home</a></li>
 			<li class="nav-item"><a href="#">About</a></li>
 			<li class="nav-item"><a href="#">Contact</a></li>
 			<li class="nav-item"><a href="#">Other</a></li>
@@ -28,6 +33,7 @@
         {% endblock %}
         <p>&copy; 2017 Nick Wilde</p>
     </div>
+    <script src="{% static 'nickjwilde/js/main.js' %}" type="text/javascript"></script>
 
 </body>
 </html>
