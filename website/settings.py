@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': secrets.engines['postgres'],
+        'ENGINE': secrets.DB_ENGINE,
         'NAME': secrets.DB_NAME,
         'HOST': secrets.DB_HOST,
         'USER': secrets.DB_USERNAME,

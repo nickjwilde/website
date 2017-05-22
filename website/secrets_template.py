@@ -7,11 +7,12 @@ engines = {
     'mysql': 'django.db.backends.mysql',
     'sqlite': 'django.db.backends.sqlite3',
     'oracle': 'django.db.backends.oracle',
-    'postgres': 'django.db.backends.postgresql'
+    'postgres': 'django.db.backends.postgresql',
+    'default': 'django.db.backedns.sqlite3'
 }
 
 
-
+DB_ENGINE = engines['default']
 DB_HOST = ''
 DB_PORT = ''
 DB_NAME = ''
