@@ -1,0 +1,29 @@
+1. Statistics
+	a. descriptive
+	b. inferential
+2. Math
+	a. multivariable calc
+	b. linear algebra
+3. Machine Learning
+	a. neural networks
+	b. support vector machines
+	c. K-means
+	d. Decision Trees
+	e. Logistic Regression
+	f Bayes classification
+	g. Ordinary least squares regression
+	h. supervised, unsupervised, and reinforcement
+	i. Principal Component Analysis
+	j. Singular Value Decomposition
+	k. Independent Component Analysis ICA
+	l. Q-Learning
+	m. TD-learning
+	o. Genetic algorithms
+4. Data Wrangling 
+	a. Sql
+	b. NoSql
+	c. Hadoop, spark
+5. Data visualization
+	a. ggplot
+	b. matplotlib
+	c. sea born
