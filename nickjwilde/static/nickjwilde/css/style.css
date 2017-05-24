@@ -86,6 +86,17 @@ html {
 	list-style-type: none;
 }
 
+.skill {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.skill-list .skill img {
+    width: 40%;
+    min-width: 100px;
+    max-width: 150px;
+}
+
 .uline-h {
 	border-bottom: solid 2px #d84c00;
 	padding-bottom: 5px;
