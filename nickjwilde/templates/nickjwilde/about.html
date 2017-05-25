@@ -7,13 +7,19 @@
 
 {% block body %}
     <h1>About Me</h1>
-    <h3>Skills</h3>
+    <h2>Skills</h2>
     <div class="skill-list">
         <div class="skill">
             <img src="{% static 'nickjwilde/img/django_logo.svg' %}" />
+            <div class="overlay">
+                <div class="years">2 years</div>
+            </div>
         </div>
         <div class="skill">
             <img src="{% static 'nickjwilde/img/python_logo.svg' %}" />
+            <div class="overlay">
+                <div class="years">2 years</div>
+            </div>
         </div>
     </div>
 {% endblock %}

@@ -73,6 +73,7 @@ html {
 .nav-item a:hover {
     background-color: #0088d8;
     color: white;
+
     box-shadow: 0 4px 6px 0 grey,
         0 4px 20px 0 grey
 }
@@ -81,25 +82,68 @@ html {
 	border-bottom: solid #0088d8 2px;
 }
 
+.overlay {
+    background-color: #d84c00;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 0;
+    height: 100%;
+
+    overflow: hidden;
+    transition: .5s ease;
+}
+
 .side-nav {
 	float: left;
+
 	list-style-type: none;
 }
 
 .skill {
-    text-align: center;
     margin-bottom: 5px;
+
+    position: relative;
+
+    width: 50%;
+
+    text-align: center;
 }
 
-.skill-list .skill img {
-    width: 40%;
+.skill:hover .overlay {
+    color: white;
+
+    width: 150px;
+
+    opacity: .97;
+}
+
+.skill img {
+    display: block;
+
+    width: 150px;
     min-width: 100px;
-    max-width: 150px;
 }
 
 .uline-h {
 	border-bottom: solid 2px #d84c00;
 	padding-bottom: 5px;
+}
+
+.years {
+    color: white;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+    font-size: 20px;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 /* IDs */
@@ -128,17 +172,20 @@ html {
 /* Responsive */
 @media only screen and (max-width: 570px){
     .nav {
+        background-color: #0088d8;
+
         position: fixed;
 
         width: 100%;
-        background-color: #0088d8;
     }
 
     .nav-item {
-        display: none;
         float: none;
+
         max-width: none;
         width: 100%;
+
+        display: none;
     }
     
     .nav-item a {
@@ -156,9 +203,11 @@ html {
 
     .stacked-bar {
         background-color: white;
+
+        margin: 6px auto;
+
         height: 3px;
         width: 32px;
-        margin: 6px auto;
     }
 
     .visible {
