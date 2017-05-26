@@ -1,0 +1,9 @@
+{% extends 'nickjwilde/base.html' %}
+{% block body %}
+    <h1>Contact</h1>
+    <form action="/contact/" id="contactForm" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit" />
+    </form>
+{% endblock %}
