@@ -15,10 +15,10 @@ def about(request):
 
 def contact(request):
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = ContactForm(request.POST, label_suffix='')
 
         if form.is_valid():
             return HttpResponseRedirect('/thanks/')
     else:
-        form = ContactForm()
+        form = ContactForm(label_suffix='')
     return render(request, 'nickjwilde/contact.html', {'form': form})
