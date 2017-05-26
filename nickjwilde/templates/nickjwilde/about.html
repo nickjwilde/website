@@ -7,19 +7,16 @@
 
 {% block body %}
     <h1>About Me</h1>
+    <p>I'm a Software Developer.</p>
     <h2>Skills</h2>
     <div class="skill-list">
+    {% for skill in skills %}
         <div class="skill">
-            <img src="{% static 'nickjwilde/img/django_logo.svg' %}" />
+            <img src="static/nickjwilde/img/{{ skill.image_name}}" />
             <div class="overlay">
-                <div class="years">2 years</div>
+                <div class="years">{{ skill.num_years_text}}</div>
             </div>
         </div>
-        <div class="skill">
-            <img src="{% static 'nickjwilde/img/python_logo.svg' %}" />
-            <div class="overlay">
-                <div class="years">2 years</div>
-            </div>
-        </div>
+    {% endfor %}
     </div>
 {% endblock %}

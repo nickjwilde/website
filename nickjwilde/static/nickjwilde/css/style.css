@@ -90,6 +90,8 @@ html {
     bottom: 0;
     left: 0;
 
+    border-radius: 8px;
+
     width: 0;
     height: 100%;
 
