@@ -8,7 +8,7 @@ engines = {
     'sqlite': 'django.db.backends.sqlite3',
     'oracle': 'django.db.backends.oracle',
     'postgres': 'django.db.backends.postgresql',
-    'default': 'django.db.backedns.sqlite3'
+    'default': 'django.db.backends.sqlite3'
 }
 
 
