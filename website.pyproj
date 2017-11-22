@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0c64426d-48d0-46c7-b654-dad8c29e2842}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <InterpreterId>MSBuild|django_py36-32|$(MSBuildProjectFullPath)</InterpreterId>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="nickjwilde\admin.py" />
+    <Compile Include="nickjwilde\apps.py" />
+    <Compile Include="nickjwilde\forms.py" />
+    <Compile Include="nickjwilde\migrations\0001_initial.py" />
+    <Compile Include="nickjwilde\migrations\__init__.py" />
+    <Compile Include="nickjwilde\models.py" />
+    <Compile Include="nickjwilde\tests.py" />
+    <Compile Include="nickjwilde\urls.py" />
+    <Compile Include="nickjwilde\views.py" />
+    <Compile Include="nickjwilde\__init__.py" />
+    <Compile Include="website\gen_secret_key.py" />
+    <Compile Include="website\secrets.py" />
+    <Compile Include="website\secrets_template.py" />
+    <Compile Include="website\settings.py" />
+    <Compile Include="website\urls.py" />
+    <Compile Include="website\wsgi.py" />
+    <Compile Include="website\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nickjwilde\static\nickjwilde\css\style.css" />
+    <Content Include="nickjwilde\static\nickjwilde\img\django_logo.svg" />
+    <Content Include="nickjwilde\static\nickjwilde\img\python_logo.svg" />
+    <Content Include="nickjwilde\static\nickjwilde\js\main.js" />
+    <Content Include="nickjwilde\templates\nickjwilde\about.html" />
+    <Content Include="nickjwilde\templates\nickjwilde\base.html" />
+    <Content Include="nickjwilde\templates\nickjwilde\contact.html" />
+    <Content Include="nickjwilde\templates\nickjwilde\home.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="nickjwilde" />
+    <Folder Include="nickjwilde\migrations" />
+    <Folder Include="nickjwilde\static\" />
+    <Folder Include="nickjwilde\static\nickjwilde\" />
+    <Folder Include="nickjwilde\static\nickjwilde\css" />
+    <Folder Include="nickjwilde\static\nickjwilde\img" />
+    <Folder Include="nickjwilde\static\nickjwilde\js" />
+    <Folder Include="nickjwilde\templates\" />
+    <Folder Include="nickjwilde\templates\nickjwilde" />
+    <Folder Include="website" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="..\venvs\django_py36-32\">
+      <Id>django_py36-32</Id>
+      <Version>3.6</Version>
+      <Description>django_py36-32 (Python 3.6 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55598/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>True</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
