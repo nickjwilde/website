@@ -4,31 +4,29 @@
     {% load static %}
 
 	<link href={% static "nickjwilde/css/style.css" %} type="text/css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     {% block head %}
     {% endblock %}
 </head>
 <body>
     {% block nav %}
-		<ul class="nav">
-            <div class="stacked-menu">
-                <div class="stacked-bar" alt="menu-icon"></div>
-                <div class="stacked-bar" alt="menu-icon"></div>
-                <div class="stacked-bar" alt="menu-icon"></div>
-            </div>
-			<li class="nav-item"><a href="{% url 'nickjwilde:home' %}">Home</a></li>
-			<li class="nav-item"><a href="{% url 'nickjwilde:about' %}">About</a></li>
-			<li class="nav-item"><a href="{% url 'nickjwilde:contact' %}">Contact</a></li>
-			<li class="nav-item"><a href="#">Posts</a></li>
-		</ul>
+	<div class="nw-navbar">
+		<a class="nw-navbar-item nw-button nw-hide-medium nw-hide-large nw-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+			<i class="fa fa-bars"></i>
+		</a>
+		<a href="#">about</a>
+		<a href="#">posts</a>
+		<a href="#">contact</a>
+	</div>
     {% endblock %}
 
-    <div id="main-body">
+    <div class="nw-content">
         {% block body %}
         {% endblock %}
     </div>
     
-    <div id="footer">
+    <div class="nw-footer">
         {% block footer %}
         {% endblock %}
         <p>&copy; 2017 Nick Wilde</p>

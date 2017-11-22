@@ -94,3 +94,5 @@ nw_site.db
 
 #visual studio directory
 .vs
+bin/
+obj/
